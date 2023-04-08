@@ -1,0 +1,128 @@
+:root{
+    --background-primary-color: #151a1d;
+    --background-second-color: #2a3a44;
+    --thrid-color: #374752;
+
+    --color-letters: #fff;
+
+    --border-radius: 30px;
+
+    --padding-small: 5px 10px;
+    --padding-buttons: 15px 20px;
+    --padding-normal: 25px;
+
+    --width: 90%;
+
+    --border-radius: 30px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.inner{
+    color: var(--color-letters);
+    background-color: var(--background-second-color);
+    padding: var(--padding-normal);
+    border-radius: var(--border-radius);
+}
+
+.inner-2{
+    display: none;
+    color: var(--color-letters);
+    background-color: var(--background-second-color);
+    padding: var(--padding-normal);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+section{
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1, h3, h5{
+    padding-top: var(--padding-normal);
+}
+
+h5{
+    color: rgb(194, 137, 31);
+}
+
+.par, .inner-2 p{
+    padding-top: var(--padding-normal);
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.image{
+    border-radius: var(--border-radius);
+    background-color: var(--thrid-color);
+    padding: 15px;
+}
+
+.buttons{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-normal) 0;
+    width: var(--width);
+}
+
+.btn{
+    background-color: var(--thrid-color);
+    border: none;
+    color: #9ea7ad;
+    border-radius: var(--border-radius);
+    padding: var(--padding-buttons);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(194, 137, 31);
+    color: var(--color-letters);
+    font-weight: 700;
+}
+
+.btn2{
+    padding: 10px 0;
+    width: var(--width);
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    background-color: rgb(194, 137, 31);
+    color: var(--color-letters);
+}
+
+.btn2:hover{
+    background-color: var(--color-letters);
+    color: rgb(194, 137, 31);
+}
+
+.touch{
+    background-color: var(--color-letters);
+}
+
+@media (min-width: 400px){
+    body{
+        background-color: var(--background-primary-color);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    section{
+        width: 70%;
+    }
+}
+
